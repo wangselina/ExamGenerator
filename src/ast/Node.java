@@ -1,4 +1,7 @@
 package ast;
 
-public class Node {
+abstract class Node {
+
+    abstract void parse();
+    abstract void evaluate();
 }
