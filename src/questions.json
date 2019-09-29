@@ -1,0 +1,483 @@
+{
+  "math": [
+    {
+      "question": "If Logx (1 / 8) = - 3 / 2, then x is equal to ",
+      "type": "MC",
+      "options": ["-4", "4", "1/4", "10"]
+    },
+    {
+      "question": "20 % of 2 is equal to ",
+      "type": "MC",
+      "options": ["20", "4", "0.4", "0.04"]
+    },
+    {
+      "question": "The population of a country increased by an average of 2% per year from 2000 to 2003. If the population of this country was 2 000 000 on December 31, 2003, then the population of this country on January 1, 2000, to the nearest thousand would have been  ",
+      "type": "MC",
+      "options": ["1 846 000", "1 852 000", "1 000 000", "1 500 000"]
+    },
+    {
+      "question": "f is a quadratic function whose graph is a parabola opening upward and has a vertex on the x-axis. The graph of the new function g defined by g(x) = 2 - f(x - 5) has a range defined by the interval ",
+      "type": "MC",
+      "options": ["[ -5 , + infinity)", "[2 , + infinity)", "( - infinity , 2]", "( - infinity , 0]"]
+    },
+    {
+      "question": "f is a function such that f(x) < 0. The graph of the new function g defined by g(x) = | f(x) | is a reflection of the graph of f ",
+      "type": "MC",
+      "options": ["on the y axis ", "on the x axis", "on the line y = x", "on the line y = - x"]
+    },
+    {
+      "question": "If the graph of y = f(x) is transformed into the graph of 2y - 6 = - 4 f(x - 3), point (a , b) on the graph of y = f(x) becomes point (A , B) on the graph of 2y - 6 = - 4 f(x - 3) where A and B are given by ",
+      "type": "MC",
+      "options": ["A = a - 3, B = b ", "A = a - 3, B = b ", "A = a + 3, B = -2 b ", "A = a + 3, B = -2 b +3"]
+    },
+    {
+      "question": "When a parabola represented by the equation y - 2x 2 = 8 x + 5 is translated 3 units to the left and 2 units up, the new parabola has its vertex at",
+      "type": "MC",
+      "options": ["(-5 , -1)", " (-5 , -5) ", "(-1 , -3)", "(-2 , -3)"]
+    },
+    {
+      "question": "The graphs of the two linear equations a x + b y = c and b x - a y = c, where a, b and c are all not equal to zero, ",
+      "type": "MC",
+      "options": ["are parallel", "intersect at one point ", "intersect at two points", "perpendicular"]
+    },
+    {
+      "question": "The graphs of the two equations y = a x 2 + b x + c and y = A x 2 + B x + C, such that a and A have different signs and that the quantities b 2 - 4 a c and B 2 - 4 A C are both negative, ",
+      "type": "MC",
+      "options": ["intersect at two points", "intersect at one point ", "do not intersect ", "none of the above"]
+    },
+    {
+      "question": "For x greater than or equal to zero and less than or equal to 2 π, sin x and cos x are both decreasing on the intervals",
+      "type": "MC",
+      "options": ["(0 , π/2)", "(π/2 , π)", "(π , 3 π / 2) ", "(3 π / 2 , 2 π)"]
+    },
+    {
+      "question": "The three solutions of the equation f(x) = 0 are -2, 0, and 3. Therefore, the three solutions of the equation f(x - 2) = 0 are  ",
+      "type": "MC",
+      "options": [" - 4, -2, and 1", "-2, 0 and 3", " 4, 2, and 5", "0, 2 and 5"]
+    },
+    {
+      "question": "The three solutions of the equation f(x) = 0 are - 4, 8, and 11. Therefore, the three solutions of the equation f(2 x) = 0 are ",
+      "type": "MC",
+      "options": ["- 2, 4, and 11/2", "- 8, 16 and 22 ", "- 4, 8, and 11 ", "2, 19 / 2 and 7 / 2"]
+    },
+    {
+      "question": "A school committee consists of 2 teachers and 4 students. The number of different committees that can be formed from 5 teachers and 10 students is",
+      "type": "MC",
+      "options": ["10", "15", "2100", "8"]
+    },
+    {
+      "question": "Five different books (A, B, C, D and E) are to be arranged on a shelf. Books C and D are to be arranged first and second starting from the right of the shelf. The number of different orders in which books A, B and E may be arranged is ",
+      "type": "MC",
+      "options": ["5!", "3!", "2!", "3! * 2"]
+    },
+    {
+      "question": "The mean of a data set is equal to 10 and its standard deviation is equal to 1. If we add 5 to each data value, then the mean and standard deviation become ",
+      "type": "MC",
+      "options": ["mean = 15 , standard deviation = 6", "mean = 10 , standard deviation = 6", "mean = 15 , standard deviation = 1", "mean = 10 , standard deviation = 1"]
+    },
+    {
+      "question": "The exam scores of all 500 students were recorded and it was determined that these scores were normally distributed. If Jane's score is 0.8 standard deviation above the mean, then how many, to the nearest unit, students scored above Jane? ",
+      "type": "MC",
+      "options": ["394", "250", "400", "106"]
+    },
+    {
+      "question": "If f(x) is an odd function, then | f(x) | is ",
+      "type": "MC",
+      "options": ["an odd function ", "an even function", "neither odd nor even ", "even and odd"]
+    },
+    {
+      "question": "The period of | sin (3x) | is",
+      "type": "MC",
+      "options": ["2 π", "2 π / 3", "π / 3", "3 π"]
+    },
+    {
+      "question": "When a metallic ball bearing is placed inside a cylindrical container, of radius 2 cm, the height of the water, inside the container, increases by 0.6 cm. The radius, to the nearest tenth of a centimeter, of the ball bearing is",
+      "type": "MC",
+      "options": ["1 cm", "1.2 cm", "2 cm", "0.6 cm"]
+    },
+    {
+      "question": "The period of 2 sin x cos x is ",
+      "type": "MC",
+      "options": ["4 π^2", "2 π", "4 π", "π"]
+    },
+    {
+      "question": "The probability that an electronic device produced by a company does not function properly is equal to 0.1. If 10 devices are bought, then the probability, to the nearest thousandth, that 7 devices function properly is ",
+      "type": "MC",
+      "options": ["0.057", "0.478", "0.001", "0"]
+    },
+    {
+      "question": "The circumference of a circle is equal to 72 pi. Find the radius of this circle. ",
+      "type": "SA"
+    },
+    {
+      "question": "The length of a rectangular garden is 2 feet longer than 3 times its width. If the perimeter of the garden is 100 feet, find the width and the length of the garden.",
+      "type": "SA"
+    },
+    {
+      "question": "Find two numbers whose sum is 26 and whose product is 165.",
+      "type": "SA"
+    },
+    {
+      "question": "A rectangular field has a length 10 feet more than it is width. If the area of the field is 264, what are the dimensions of the rectangular field?",
+      "type": "SA"
+    },
+    {
+      "question": "The area of a rectangle is 15 square centimeters and the perimeter is 16 square centimeters. What are the dimensions of the rectangle? ",
+      "type": "SA"
+    },
+    {
+      "question": "The sum of two numbers is 20. The larger number is four less than twice the smaller number. What rae the two numbers?",
+      "type": "SA"
+    },
+    {
+      "question": "The hypotenuse of a right triangle is 2 centimeters more than the longer side of the triangle. The shorter side of the triangle is 7 centimeters less than the longer side. Find the length of the hypotenuse. ",
+      "type": "SA"
+    },
+    {
+      "question": "Pump A can fill a tank of water in 5 hours. Pump B can fill the same tank in 8 hours. How long does it take the two pumps working together to fill the tank?(round your answer to the nearest minute).",
+      "type": "SA"
+    },
+    {
+      "question": "Each dimension of a cube has been increased to twice its original size. If the new cube has a volume of 64,000 cubic centimeters, what is the area of one face of the original cube?",
+      "type": "SA"
+    },
+    {
+      "question": "The length of a rectangle is increased to 2 times its original size and its width is increased to 3 times its original size. If the area of the new rectangle is equal to 1800 square meters, what is the area of the original rectangle?",
+      "type": "SA"
+    },
+    {
+      "question": "Point A has the coordinates (2,2). What are the coordinates of its image point if it is translated 2 units up and 5 units to the left, and reflected in the x axis?",
+      "type": "SA"
+    },
+    {
+      "question": "A six-sided die is rolled once. What is the probability that the number rolled is an even number greater than 2?",
+      "type": "SA"
+    },
+    {
+      "question": "The length of a rectangle is four times its width. If the area is 100 m2 what is the length of the rectangle?",
+      "type": "SA"
+    },
+    {
+      "question": "In a group of 120 people, 90 have an age of more 30 years, and the others have an age of less than 20 years. If a person is selected at random from this group, what is the probability the person's age is less than 20?",
+      "type": "SA"
+    },
+    {
+      "question": "A car traveled 281 miles in 4 hours 41 minutes. What was the average speed of the car in miles per hour?",
+      "type": "SA"
+    },
+    {
+      "question": "What is the sum of the sizes of the interior angles of a polygon with 53 sides?",
+      "type": "SA"
+    },
+    {
+      "question": "One leg of a right triangle is 18 cm and its area is 108 square cm. Find its primeter.",
+      "type": "SA"
+    },
+    {
+      "question": "Jack is taller than Sarah but shorter than both Malika and Tania. Malika is shorter than tania. Natasha is shorter than Sarah. Who is the shortest?",
+      "type": "SA"
+    },
+    {
+      "question": "A company has found that when x units of a product are manufactured and sold, its revenue is given by x 2 + 100 x dollars and its costs are given by 240 x + 500 dollars. How many units must be produced and sold to make a profit of 10,000 dollars? (HINT: profit = revenue - costs) ",
+      "type": "LA"
+    },
+    {
+      "question": "A square has a side 5 centimeters shorter than the side of a second square. The area of the larger square is four times the area of the smaller square. Find the side of each square..",
+      "type": "LA"
+    },
+    {
+      "question": "Two different schools (A and B) have the same number of pupils. The ratio of the boys in school A and the boys in school B is 2:1 and the ratio of the girls in school A and the girls in school B is 4:5. Find the ratio of the boys in school A to the girls in school A.",
+      "type": "LA"
+    },
+    {
+      "question": "A water tank has the shape of a rectangular prism of base 50 cm2. This tank is being filled at the rate of 12 liters per minutes. Find the rate at which the height of the water in the water tank increases; express your answer in millimeters per second.",
+      "type": "LA"
+    },
+    {
+      "question": "One pump fills a tank two times as fast as another pump. If the pumps work together they fill the tank in 18 minutes. How long does it take each pump working alone to fill the tank?",
+      "type": "LA"
+    },
+    {
+      "question": "When divided by x - 1, the polynomial P(x) = x5 + 2x3 +Ax + B, where A and B are constants, the remainder is equal to 2. When P(x) is divided by x + 3, the remainder is equal -314. Find A and B",
+      "type": "LA"
+    },
+    {
+      "question": "When the polynomial P(x) = x3 + 3x2 -2Ax + 3, where A is a constant, is divided by x2 + 1 we get a remainder equal to -5x. Find A",
+      "type": "LA"
+    },
+    {
+      "question": "If 200 is added to a positive integer I, the result is a square number. If 276 is added to to the same integer I, another square number is obtained. Find I",
+      "type": "LA"
+    },
+    {
+      "question": "The sum of the first three terms of a geometric sequence is equal to 42. The sum of the squares of the same terms is equal to 1092. Find the three terms of the sequence.",
+      "type": "LA"
+    },
+    {
+      "question": "Two boats on opposite banks of a river start moving towards each other. They first pass each other 1400 meters from one bank. They each continue to the opposite bank, immediately turn around and start back to the other bank. When they pass each other a second time, they are 600 meters from the other bank. We assume that each boat travels at a constant speed all along the journey. Find the width of the river? ",
+      "type": "LA"
+    },
+    {
+      "question": "It takes pump A 2 hours less time that pump B to empty a swimming pool. Pump A is started at 8:00 a.m. and pump B is started at 10:00 a.m. At 12:00 p.m. 60% of the pool is empty when pump B broke down. How much time after 12:00 p.m. would it take pump A to empty the pool? ",
+      "type": "LA"
+    },
+    {
+      "question": "Four large and 2 small pumps can fill a swimming pool in 2 hours. Two large and 6 small pumps can also fill the same swimming pool in 2 hours. How long does it take 8 large and 8 small pumps to fill 50% of the swimming pool. (NOTE: all the large pump have same power and all the small pumps have the same power).",
+      "type": "LA"
+    },
+    {
+      "question": "The number of pupils in school A is equal to half the number of pupils in school B. The ratio of the boys in school A and the boys in school B is 1:3 and the ratio of the girls in school A and the girls in school B is 3:5. The number of boys in school B is 200 higher than the number of boys in school A. Find the number of boys and girls in each school. ",
+      "type": "LA"
+    }
+  ],
+  "science": [
+    {
+      "question": "The image formed in a compound microscope is",
+      "type": "MC",
+      "options": ["erect", "inverted", "sometimes erect, sometimes inverted", "none"]
+    },
+    {
+      "question": "The lens used in a simple microscope is",
+      "type": "MC",
+      "options": ["Concave", "Convex", "Cylindrica", "None"]
+    },
+    {
+      "question": "The elimination of toxic nitrogenous waste and excess water in man is by",
+      "type": "MC",
+      "options": ["Excretion", "Circulation", "Reproduction", "Pollution"]
+    },
+    {
+      "question": "The S. I. unit of refractive index is",
+      "type": "MC",
+      "options": ["meter", "cm", "watt", "no unit"]
+    },
+    {
+      "question": "The liquid metal is",
+      "type": "MC",
+      "options": ["Bismuth", "Magnesium", "Mercury", "Sodium"]
+    },
+    {
+      "question": "Which of the following is not a primary colour",
+      "type": "MC",
+      "options": ["Red", "Blue", "Green", "Yellow"]
+    },
+    {
+      "question": "Endothermic reactions are those in which",
+      "type": "MC",
+      "options": ["Heat is evolved", "Heat is absorbed", "Temperature increases", "Light is produced"]
+    },
+    {
+      "question": "Which colour of light is deviated least",
+      "type": "MC",
+      "options": ["Red", "Blue", "Violet", "Green"]
+    },
+    {
+      "question": "Acid present in gastric juice is",
+      "type": "MC",
+      "options": ["Hydrochloric Acid", "Citric Acid", "Sulphuric Acid", "Acetic Acid"]
+    },
+    {
+      "question": "Which blood cells are called 'Soldiers' of the body",
+      "type": "MC",
+      "options": ["WBC","Platelets","RBC" , "All of the above"]
+    },
+    {
+      "question": "What type of star system has no defined shape?",
+      "type": "MC",
+      "options": ["Irregular Galaxy", "Milky Way", "Spiral Galaxy", "Binary Star System"]
+    },
+    {
+      "question": "What is inertia?",
+      "type": "MC",
+      "options": ["The tendency of an object to resist change in motion", "How fast an object is going divided by the distance", "Mass of an object divided by its volume", "A type of gas for which the inert gases were named" ]
+    },
+    {
+      "question": "What is a neap tide?",
+      "type": "MC",
+      "options": ["A tide that occurs when the difference between highest and lowest tides is least", "A tide that occurs when the difference between highest and lowest tides is the most", " A tide that occurs every 100 years", "A tide that occurs whenever there is a full moon two months in a row."]
+    },
+    {
+      "question": "How are tides created?",
+      "type": "MC",
+      "options": ["Based on the moon's position", "Based on the Earth's axis", "Based on the Earth's tilt", "Based on the height of the usn in the sky"]
+    },
+    {
+      "question": "What does AU stand for in Spacial Sciences?",
+      "type": "MC",
+      "options": ["Gold", "Astronomical Unit", "Auhsfart", "Atoms United"]
+    },
+    {
+      "question": "What is a light year?",
+      "type": "MC",
+      "options": ["How many earth years it takes light to reach the sun.", "The distance that light travels in one year", "A small part of a year", "The distance that light travels while on its journey to reach the moon"]
+    },
+    {
+      "question": "A space spinoff is",
+      "type": "MC",
+      "options": ["When 2 spaceships spin in space", "Something developed for use in space that has uses on Earth", "Something developed for use on Earth that has uses in space", "When a spacecraft crashes before entering orbit"]
+    },
+    {
+      "question": "What is a satellite?",
+      "type": "MC",
+      "options": ["Something that brings us cable", "A device put in space to orbit another object", "Something that can only be controlled by someone in space", "A device that only works on Saturdays"]
+    },
+    {
+      "question": "What percent of fire-related deaths are due to smoke inhalation rather than burns?",
+      "type": "MC",
+      "options": ["10%", "50%", "80%", " 99%"]
+    },
+    {
+      "question": "The fastest-running terrestrial animal is: ",
+      "type": "MC",
+      "options": ["cheetah", "lion", "jaguar", "man"]
+    },
+    {
+      "question": "What invention in about 1450 A.D. revolutionized communication and the world?",
+      "type": "SA"
+    },
+    {
+      "question": "What is the name for the new technology whereby a glass fiber carries as much information as hundreds of copper wires? ",
+      "type": "SA"
+    },
+    {
+      "question": "What mammal lays eggs?",
+      "type": "SA"
+    },
+    {
+      "question": "Linseed oil comes from what plant? ",
+      "type": "SA"
+    },
+    {
+      "question": "What is the name of the largest North American terrestrial rodent, distinguished by its spiny covering?",
+      "type": "SA"
+    },
+    {
+      "question": "Linen is made from what plant?",
+      "type": "SA"
+    },
+    {
+      "question": "What is arachnology?",
+      "type": "SA"
+    },
+    {
+      "question": "What is another name for the Paleolithic Age?",
+      "type": "SA"
+    },
+    {
+      "question": "What nocturnal animal group makes up one-fourth of all mammals species?",
+      "type": "SA"
+    },
+    {
+      "question": "What is the name of the whale that has a long protruding tusk?",
+      "type": "SA"
+    },
+    {
+      "question": " How many time zones are there on Earth? ",
+      "type": "SA"
+    },
+    {
+      "question": "What land mammal holds the record for the greatest age?",
+      "type": "SA"
+    },
+    {
+      "question": "What is the better known name for the deadly poison prussic acid?",
+      "type": "SA"
+    },
+    {
+      "question": "What colorless, pungent gas is often dissolved in water to yield a solution that is used as a biological preservative? ",
+      "type": "SA"
+    },
+    {
+      "question": "What is the rest mass of a photon? ",
+      "type": "SA"
+    },
+    {
+      "question": "What yellow metal is an alloy of copper and zinc?",
+      "type": "SA"
+    },
+    {
+      "question": "What is the name given to the process, discovered by Goodyear, of adding sulfur to heated rubber?",
+      "type": "SA"
+    },
+    {
+      "question": "Used primarily in fertilizers, which element is never found free in nature even though it makes up about 2.5% of the earth's crust?",
+      "type": "SA"
+    },
+    {
+      "question": "What element, whose symbol derived from the Latin for liquid silver, has been found in Egyptian tombs from 1500 B.C.? ",
+      "type": "SA"
+    },
+    {
+      "question": "What poisonous alkaloid is extracted from tobacco leaves and widely used as an insecticide?",
+      "type": "SA"
+    },
+    {
+      "question": "What is the name for steel alloyed with chromium? ",
+      "type": "SA"
+    },
+    {
+      "question": "Describe the principle of which the following method of food preservation",
+      "type": "LA"
+    },
+    {
+      "question": "What is the role of yeast in a bakery?",
+      "type": "LA"
+    },
+    {
+      "question": "How does food get spoilt? In what ways can food be preserved?",
+      "type": "LA"
+    },
+    {
+      "question": "How are microbes useful in cleaning the environment?",
+      "type": "LA"
+    },
+    {
+      "question": "How are microbes useful in cleaning the environment?",
+      "type": "LA"
+    },
+    {
+      "question": "What is the important function of presence of ozone in earth’s atmosphere?",
+      "type": "LA"
+    },
+    {
+      "question": "Explain why a ray of light passing through the centre of curvature of concave minor gets reflected along the same path. ",
+      "type": "LA"
+    },
+    {
+      "question": "How are we able to see distant and nearby objects clearly? Which part of eye helps in changing curvature of lens? Why no image is formed at blind spot?",
+      "type": "LA"
+    },
+    {
+      "question": "What are ‘magnetic field lines’? How is the direction of a magnetic field at a point determined ?",
+      "type": "LA"
+    },
+    {
+      "question": "Mention the essential material (chemicals) to prepare soap in the laboratory. Describe in brief the test of determining the nature (acidic/alkaline) of the reaction mixture of saponification reaction.",
+      "type": "LA"
+    },
+    {
+      "question": "Write two precautions to be taken while identifying different parts of an embryo of a dicot seed.",
+      "type": "LA"
+    },
+    {
+      "question": "A student is to conduct an experiment to show CO2 is released during respiration. List two precautions that he/she must take for obtaining correct observation.",
+      "type": "LA"
+    },
+    {
+      "question": "How many grams of carbohydrate is present in a hen’s egg?",
+      "type": "LA"
+    },
+    {
+      "question": "What is the total number of permanent incisors in both the upper and lower jaws of the cattle and buffaloes?",
+      "type": "LA"
+    },
+    {
+      "question": "Mars has a mass of 6.37 ×1023 kg and a radius of 3. 43 ×106 m. What is the gravitational field strength on its surface?",
+      "type": "LA"
+    },
+    {
+      "question": " A proton moves with a speed of 3.6 ×105 m s at right angles to a uniform 5.0 ×10−5 T magnetic field. What is the radius of curvature for the motion of the proton?",
+      "type": "LA"
+    }
+  ]
+}
