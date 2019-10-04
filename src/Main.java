@@ -1,5 +1,6 @@
 import ast.Exam;
 import ast.Node;
+import ast.Program;
 import lib.Tokenizer;
 
 import java.io.FileNotFoundException;
@@ -12,10 +13,10 @@ public class Main {
     public static void main(String[] args) throws FileNotFoundException, UnsupportedEncodingException {
         List<String> literals = Arrays.asList("");
         Tokenizer.makeTokenizer("input.txt",literals);
-        Exam exam = new Exam();
-        exam.parse();
+        Program document = new Program();
+        document.parse();
         Exam.setWriter("output.tex");
-        exam.evaluate();
+        document.evaluate();
         Node.closeWriter();
     }
 }

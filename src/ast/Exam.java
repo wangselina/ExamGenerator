@@ -10,7 +10,6 @@ public class Exam extends Node {
 
     @Override
     public void parse() {
-
     }
 
     @Override
