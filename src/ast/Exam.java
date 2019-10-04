@@ -9,12 +9,12 @@ public class Exam extends Node {
     private int grade = 0;
 
     @Override
-    void parse() {
+    public void parse() {
 
     }
 
     @Override
-    void evaluate() {
+    public void evaluate() {
         writer.println("\\documentclass{exam}");
         writer.println("\\begin{document}");
         writer.println("\\begin{questions}");
