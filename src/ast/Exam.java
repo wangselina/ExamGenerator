@@ -15,6 +15,13 @@ public class Exam extends Node {
 
     @Override
     void evaluate() {
-
+        writer.println("\\documentclass{exam}");
+        writer.println("\\begin{document}");
+        writer.println("\\begin{questions}");
+        for (Question q : questions) {
+            q.evaluate();
+        }
+        writer.println("end{questions}");
+        writer.println("end{document}");
     }
 }
