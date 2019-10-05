@@ -23,6 +23,7 @@ public class Exam extends Node {
                 tokenizer.getAndCheckNext("grade");
                 grade = Integer.parseInt(tokenizer.getNext());
             }
+            //TODO: What about FFQuestionHandling?
         }
     }
 
