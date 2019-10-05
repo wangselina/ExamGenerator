@@ -1,6 +1,6 @@
 create exam
-Get 5 MC questions
-Get 5 SA questions
-Get 5 LA questions
-Grade 15
+get 5 MC questions
+get 5 SA questions
+get 5 LA questions
+grade 15
 Done

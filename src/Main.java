@@ -11,8 +11,8 @@ import java.util.List;
 public class Main {
 
     public static void main(String[] args) throws FileNotFoundException, UnsupportedEncodingException {
-        List<String> literals = Arrays.asList("");
-        Tokenizer.makeTokenizer("input.txt",literals);
+        List<String> literals = Arrays.asList("create", "get", "done", "questions");
+        Tokenizer.makeTokenizer("src/input.txt", literals);
         Program document = new Program();
         document.parse();
         Exam.setWriter("output.tex");

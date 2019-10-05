@@ -6,9 +6,11 @@ public class Program extends Node {
 
     @Override
     public void parse() {
-        if (tokenizer.checkToken("create exam")) {
+        tokenizer.getAndCheckNext("create");
+
+        if (tokenizer.checkToken("exam")) {
             document = new Exam();
-        } else if (tokenizer.checkToken("create worksheet")) {
+        } else if (tokenizer.checkToken("worksheet")) {
             document = new Worksheet();
         }
 
