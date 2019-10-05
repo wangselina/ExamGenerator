@@ -1,5 +1,6 @@
 package ast;
 
+import lib.DataRetriever;
 import lib.Tokenizer;
 
 import java.io.FileNotFoundException;
@@ -10,6 +11,7 @@ public abstract class Node {
 
     protected Tokenizer tokenizer = Tokenizer.getTokenizer();
     static protected PrintWriter writer;
+    protected DataRetriever dataRetriever = DataRetriever.getDataRetriever();
 
     public static void setWriter(String name) throws FileNotFoundException, UnsupportedEncodingException {
         writer = new PrintWriter(name, "UTF-8");

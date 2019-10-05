@@ -10,6 +10,7 @@ public class Exam extends Node {
 
     @Override
     public void parse() {
+        tokenizer.getAndCheckNext("exam");
         while(!tokenizer.checkToken("done")) {
             if (tokenizer.checkToken("get")){
                 tokenizer.getAndCheckNext("get");
