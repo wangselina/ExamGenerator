@@ -1,10 +1,24 @@
 package ast;
 
+import org.json.simple.JSONArray;
+import org.json.simple.JSONObject;
+
+import java.util.HashMap;
+import java.util.List;
+
 public class SAQuestion extends Question {
     String question;
 
     @Override
     void parse() {
+        HashMap<String, HashMap<String, List<JSONObject>>> data = dataRetriever.getData();
+        // TODO: default subject is math. ADD Subject
+        List<JSONObject> MCQuestions = data.get("math").get("SA");
+
+        int randomIndex = (int) (Math.random() * MCQuestions.size());
+        JSONObject questionObject = MCQuestions.get(randomIndex);
+
+        question = (String) questionObject.get("question");
 
     }
 
