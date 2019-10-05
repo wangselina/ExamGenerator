@@ -17,7 +17,7 @@ public class Main {
         DataRetriever.makeDataRetriever();
         Program document = new Program();
         document.parse();
-        document.setWriter("output.tex");
+        document.setWriter("output.text");
         document.evaluate();
         Node.closeWriter();
     }
