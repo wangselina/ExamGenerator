@@ -22,7 +22,7 @@ public class DataRetriever {
         JSONParser parser = new JSONParser();
 
         try {
-            Object obj = parser.parse(new FileReader("questions.json"));
+            Object obj = parser.parse(new FileReader("src/questions.json"));
             JSONObject jsonObject = (JSONObject) obj;
             JSONArray mathQuestions =  (JSONArray) jsonObject.get("math");
             JSONArray sceinceQuestions = (JSONArray)  jsonObject.get("science");
@@ -55,6 +55,12 @@ public class DataRetriever {
 
     public static DataRetriever getDataRetriever() {
         return dataRetriever;
+    }
+
+    public static void makeDataRetriever() {
+        if (dataRetriever == null){
+            dataRetriever = new DataRetriever();
+        }
     }
 
     public  HashMap<String, HashMap<String, List<JSONObject>>> getData() {
