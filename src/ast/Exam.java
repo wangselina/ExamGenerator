@@ -16,7 +16,7 @@ public class Exam extends Node {
                 tokenizer.getAndCheckNext("get");
                 int numOfQuestions = Integer.parseInt(tokenizer.getNext());
                 String typeOfQuestion = tokenizer.getNext();
-                tokenizer.getAndCheckNext("question");
+                tokenizer.getAndCheckNext("questions");
                 parseHelper(numOfQuestions, typeOfQuestion);
 
             } else if (tokenizer.checkToken("grade")) {
@@ -29,11 +29,11 @@ public class Exam extends Node {
     private void parseHelper(int numOfQuestion, String type) {
         for (int i = 0; i < numOfQuestion; i++) {
             Question q = null;
-            if (type == "MC") {
+            if (type.equals("MC")) {
                 q = new MCQuestion();
-            } else if (type == "SA") {
+            } else if (type.equals("SA")){
                 q = new SAQuestion();
-            } else if (type == "LA") {
+            } else if (type.equals("LA")){
                 q = new LAQuestion();
             }
 
