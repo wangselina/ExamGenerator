@@ -15,7 +15,7 @@ public class Main {
         Tokenizer.makeTokenizer("src/input.txt", literals);
         Program document = new Program();
         document.parse();
-        Exam.setWriter("output.tex");
+        document.setWriter("output.tex");
         document.evaluate();
         Node.closeWriter();
     }

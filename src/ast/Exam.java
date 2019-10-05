@@ -10,6 +10,36 @@ public class Exam extends Node {
 
     @Override
     public void parse() {
+        while(!tokenizer.checkToken("done")) {
+            if (tokenizer.checkToken("get")){
+                tokenizer.getAndCheckNext("get");
+                int numOfQuestions = Integer.parseInt(tokenizer.getNext());
+                String typeOfQuestion = tokenizer.getNext();
+                tokenizer.getAndCheckNext("question");
+                parseHelper(numOfQuestions, typeOfQuestion);
+
+            } else if (tokenizer.checkToken("grade")) {
+                tokenizer.getAndCheckNext("grade");
+                grade = Integer.parseInt(tokenizer.getNext());
+            }
+        }
+    }
+
+    private void parseHelper(int numOfQuestion, String type) {
+        for (int i = 0; i < numOfQuestion; i++) {
+            Question q = null;
+            if (type == "MC") {
+                q = new MCQuestion();
+            } else if (type == "SA") {
+                q = new SAQuestion();
+            } else if (type == "LA") {
+                q = new LAQuestion();
+            }
+
+            q.parse();
+            questions.add(q);
+        }
+
     }
 
     @Override
