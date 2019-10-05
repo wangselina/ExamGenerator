@@ -63,7 +63,7 @@ public class DataRetriever {
         }
     }
 
-    public  HashMap<String, HashMap<String, List<JSONObject>>> getData() {
+    public HashMap<String, HashMap<String, List<JSONObject>>> getData() {
         return data;
     }
 }

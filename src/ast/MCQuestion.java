@@ -1,8 +1,11 @@
 package ast;
 
-import lib.DataRetriever;
+import org.json.simple.JSONArray;
+import org.json.simple.JSONObject;
 
 import java.util.ArrayList;
+import java.util.HashMap;
+import java.util.Iterator;
 import java.util.List;
 
 public class MCQuestion extends Question {
@@ -12,7 +15,24 @@ public class MCQuestion extends Question {
 
     @Override
     void parse() {
-        DataRetriever.getDataRetriever().getData();
+        HashMap<String, HashMap<String, List<JSONObject>>> data = dataRetriever.getData();
+        List<JSONObject> MCQuestions = data.get("math").get("MC");
+
+        int randomIndex = (int) Math.random() * MCQuestions.size();
+        JSONObject questionObject = MCQuestions.get(randomIndex);
+
+        question = (String) questionObject.get("question");
+
+        JSONArray arrayOfOptions = (JSONArray) questionObject.get("options");
+        parseOptions(arrayOfOptions);
+    }
+
+    private void parseOptions(JSONArray list) {
+        Iterator<String> iterator = list.iterator();
+
+        while(iterator.hasNext()) {
+            options.add(iterator.next());
+        }
     }
 
     @Override
