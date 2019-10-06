@@ -19,8 +19,7 @@ public class MCQuestion extends Question {
         // TODO: default subject is math. ADD Subject
         List<JSONObject> MCQuestions = data.get("math").get("MC");
 
-        // TODO: should this be % instead of *
-        int randomIndex = (int) (Math.random() * MCQuestions.size());
+        int randomIndex = (int) (Math.random() % MCQuestions.size());
         JSONObject questionObject = MCQuestions.get(randomIndex);
 
         question = (String) questionObject.get("question");
