@@ -1,4 +1,3 @@
-import ast.Exam;
 import ast.Node;
 import ast.Program;
 import lib.DataRetriever;
@@ -12,7 +11,7 @@ import java.util.List;
 public class Main {
 
     public static void main(String[] args) throws FileNotFoundException, UnsupportedEncodingException {
-        List<String> literals = Arrays.asList("create", "get", "done", "questions");
+        List<String> literals = Arrays.asList("create", "get", "done", "questions", "grade", "subject:");
         Tokenizer.makeTokenizer("src/input.txt", literals);
         DataRetriever.makeDataRetriever();
         Program document = new Program();

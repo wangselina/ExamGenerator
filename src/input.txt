@@ -1,6 +1,7 @@
 create exam
+subject: math
+grade 3
 get 5 MC questions
 get 5 SA questions
 get 5 LA questions
-grade 15
 done

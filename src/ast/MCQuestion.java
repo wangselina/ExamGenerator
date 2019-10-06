@@ -16,8 +16,8 @@ public class MCQuestion extends Question {
     @Override
     void parse() {
         HashMap<String, HashMap<String, List<JSONObject>>> data = dataRetriever.getData();
-        // TODO: default subject is math. ADD Subject
-        List<JSONObject> MCQuestions = data.get("math").get("MC");
+        // TODO: ADD grade
+        List<JSONObject> MCQuestions = data.get(subject).get("MC");
 
         int randomIndex = (int) (Math.random() % MCQuestions.size());
         JSONObject questionObject = MCQuestions.get(randomIndex);

@@ -12,8 +12,8 @@ public class LAQuestion extends Question {
     @Override
     void parse() {
         HashMap<String, HashMap<String, List<JSONObject>>> data = dataRetriever.getData();
-        // TODO: default subject is math. ADD Subject
-        List<JSONObject> LAQuestions = data.get("math").get("LA");
+        // TODO: ADD grade
+        List<JSONObject> LAQuestions = data.get(subject).get("LA");
 
         int randomIndex = (int) (Math.random() % LAQuestions.size());
         JSONObject questionObject = LAQuestions.get(randomIndex);
