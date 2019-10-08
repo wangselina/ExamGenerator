@@ -13,7 +13,7 @@ public class LAQuestion extends Question {
     void parse() {
         HashMap<String, HashMap<String, List<JSONObject>>> data = dataRetriever.getData();
         // TODO: ADD grade
-        List<JSONObject> LAQuestions = data.get(subject).get("LA");
+        List<JSONObject> LAQuestions = data.get(Node.subject).get("LA");
 
         int randomIndex = (int) (Math.random() % LAQuestions.size());
         JSONObject questionObject = LAQuestions.get(randomIndex);

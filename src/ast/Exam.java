@@ -6,9 +6,6 @@ import java.util.List;
 public class Exam extends Node {
 
     private List<Question> questions = new ArrayList<>();
-    // TODO: instead of using default grade, subject, throw error when user hasn't provided grade, subject before getting questions
-    private int grade = 1;
-    private String subject = "math";
 
     @Override
     public void parse() {
@@ -23,10 +20,10 @@ public class Exam extends Node {
 
             } else if (tokenizer.checkToken("grade")) {
                 tokenizer.getAndCheckNext("grade");
-                grade = Integer.parseInt(tokenizer.getNext());
+                Node.grade = Integer.parseInt(tokenizer.getNext());
             } else if(tokenizer.checkToken("subject:")) {
                 tokenizer.getAndCheckNext("subject:");
-                subject = tokenizer.getNext();
+                Node.subject = tokenizer.getNext();
             }
             //TODO: What about FFQuestionHandling?
         }
@@ -43,8 +40,6 @@ public class Exam extends Node {
                 q = new LAQuestion();
             }
 
-            q.grade = grade;
-            q.subject = subject;
             q.parse();
             questions.add(q);
         }

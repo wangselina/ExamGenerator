@@ -17,7 +17,7 @@ public class MCQuestion extends Question {
     void parse() {
         HashMap<String, HashMap<String, List<JSONObject>>> data = dataRetriever.getData();
         // TODO: ADD grade
-        List<JSONObject> MCQuestions = data.get(subject).get("MC");
+        List<JSONObject> MCQuestions = data.get(Node.subject).get("MC");
 
         int randomIndex = (int) (Math.random() % MCQuestions.size());
         JSONObject questionObject = MCQuestions.get(randomIndex);

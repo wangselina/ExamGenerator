@@ -9,6 +9,9 @@ import java.io.UnsupportedEncodingException;
 
 public abstract class Node {
 
+    // TODO: instead of using default grade, subject, throw error when user hasn't provided grade, subject before getting questions
+    protected static int grade = 1;
+    protected static String subject = "math";
     protected Tokenizer tokenizer = Tokenizer.getTokenizer();
     static protected PrintWriter writer;
     protected DataRetriever dataRetriever = DataRetriever.getDataRetriever();
