@@ -38,6 +38,10 @@ public class MCQuestion extends Question {
 
     @Override
     void evaluate() {
-
+        writer.println("\\begin{enumerate}");
+        for (String option: options) {
+            writer.println("\\item " + option);
+        }
+        writer.println("\\end{enumerate}");
     }
 }
