@@ -5,7 +5,7 @@ public class FFQuestion extends Question {
 
     @Override
     void parse() {
-
+        question = tokenizer.getNext();
     }
 
     @Override

@@ -17,13 +17,15 @@ public class Exam extends Node {
                 String typeOfQuestion = tokenizer.getNext();
                 tokenizer.getAndCheckNext("questions");
                 parseHelper(numOfQuestions, typeOfQuestion);
-
             } else if (tokenizer.checkToken("grade")) {
                 tokenizer.getAndCheckNext("grade");
                 Node.grade = Integer.parseInt(tokenizer.getNext());
             } else if(tokenizer.checkToken("subject:")) {
                 tokenizer.getAndCheckNext("subject:");
                 Node.subject = tokenizer.getNext();
+            } else if(tokenizer.checkToken("custom:")) {
+                tokenizer.getAndCheckNext("custom:");
+                parseHelper(1, "FF");
             }
             //TODO: What about FFQuestionHandling?
         }
@@ -38,6 +40,8 @@ public class Exam extends Node {
                 q = new SAQuestion();
             } else if (type.equals("LA")){
                 q = new LAQuestion();
+            } else if (type.equals("FF")) {
+                q = new FFQuestion();
             }
 
             q.parse();

@@ -52,14 +52,22 @@ public class Tokenizer {
     private void spaceKillingTokenize(){
         String tokenizedProgram = program;
         tokenizedProgram = tokenizedProgram.replace("\n","");
-        tokenizedProgram = tokenizedProgram.replaceAll("([0-9]+)","_$1_");
+
+        // only replace numbers outside of quotation marks
+        tokenizedProgram = tokenizedProgram.replaceAll("([0-9](?=(\"[^\"]*\"|[^\"])*$))","_$1_");
         System.out.println(program);
 
         for (String s : literals){
             tokenizedProgram = tokenizedProgram.replace(s,"_"+s+"_");
             System.out.println(tokenizedProgram);
         }
-        tokenizedProgram = tokenizedProgram.replaceAll("[ ]+","");
+
+        // regex for all spaces not inside quotations
+        String regex = "\\s(?=(\"[^\"]*\"|[^\"])*$)";
+        tokenizedProgram = tokenizedProgram.replaceAll(regex,"");
+
+        // remove quotation in tokens
+        tokenizedProgram = tokenizedProgram.replaceAll("\"","");
         System.out.println(tokenizedProgram);
         String [] temparray=tokenizedProgram.split("[_]+");
         tokens = new String[temparray.length-1];
