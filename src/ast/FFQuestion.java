@@ -10,6 +10,7 @@ public class FFQuestion extends Question {
 
     @Override
     void evaluate() {
-
+        writer.println("\\question " + question);
+        writer.println("\\vspace{1em}");
     }
 }
