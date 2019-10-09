@@ -58,6 +58,7 @@ public class Exam extends Node {
         writer.println("\\documentclass{exam}");
         title.evaluate();
         writer.println("\\begin{document}");
+        writer.println("\\maketitle");
         writer.println("\\begin{questions}");
         for (Question q : questions) {
             q.evaluate();
