@@ -58,7 +58,7 @@ public class Exam extends Node {
         for (Question q : questions) {
             q.evaluate();
         }
-        writer.println("end{questions}");
-        writer.println("end{document}");
+        writer.println("\\end{questions}");
+        writer.println("\\end{document}");
     }
 }
