@@ -5,11 +5,14 @@ import java.util.List;
 
 public class Exam extends Node {
 
+    private Title title;
     private List<Question> questions = new ArrayList<>();
 
     @Override
     public void parse() {
         tokenizer.getAndCheckNext("exam");
+        title = new Title();
+        title.parse();
         while(!tokenizer.checkToken("done")) {
             if (tokenizer.checkToken("get")){
                 tokenizer.getAndCheckNext("get");
@@ -53,6 +56,7 @@ public class Exam extends Node {
     @Override
     public void evaluate() {
         writer.println("\\documentclass{exam}");
+        title.evaluate();
         writer.println("\\begin{document}");
         writer.println("\\begin{questions}");
         for (Question q : questions) {

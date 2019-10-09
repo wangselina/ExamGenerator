@@ -1,4 +1,5 @@
 create exam
+title: Sample Math Exam
 subject: math
 grade 3
 get 5 MC questions
