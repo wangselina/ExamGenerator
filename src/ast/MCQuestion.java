@@ -19,7 +19,7 @@ public class MCQuestion extends Question {
         // TODO: ADD grade
         List<JSONObject> MCQuestions = data.get(Node.subject).get("MC");
 
-        int randomIndex = (int) (Math.random() % MCQuestions.size());
+        int randomIndex = (int) (Math.random() * MCQuestions.size());
         JSONObject questionObject = MCQuestions.get(randomIndex);
 
         question = (String) questionObject.get("question");

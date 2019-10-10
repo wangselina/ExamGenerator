@@ -15,7 +15,7 @@ public class LAQuestion extends Question {
         // TODO: ADD grade
         List<JSONObject> LAQuestions = data.get(Node.subject).get("LA");
 
-        int randomIndex = (int) (Math.random() % LAQuestions.size());
+        int randomIndex = (int) (Math.random() * LAQuestions.size());
         JSONObject questionObject = LAQuestions.get(randomIndex);
 
         this.question = (String) questionObject.get("question");
