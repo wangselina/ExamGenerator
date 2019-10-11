@@ -7,13 +7,7 @@ public class Program extends Node {
     @Override
     public void parse() {
         tokenizer.getAndCheckNext("create");
-
-        if (tokenizer.checkToken("exam")) {
-            document = new Exam();
-        } else if (tokenizer.checkToken("worksheet")) {
-            document = new Worksheet();
-        }
-
+        document = new Exam();
         document.parse();
         tokenizer.getAndCheckNext("done");
     }

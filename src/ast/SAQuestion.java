@@ -11,7 +11,7 @@ public class SAQuestion extends Question {
     @Override
     void parse() {
         HashMap<String, HashMap<String, List<JSONObject>>> data = dataRetriever.getData();
-        // TODO: ADD grade
+
         List<JSONObject> MCQuestions = data.get(Node.subject).get("SA");
 
         int randomIndex = (int) (Math.random() * MCQuestions.size());
@@ -19,11 +19,16 @@ public class SAQuestion extends Question {
 
         question = (String) questionObject.get("question");
 
+        if (Node.graded) {
+            Node.grade = Node.grade + 2;
+        }
+
     }
 
     @Override
     public void evaluate() {
-        writer.println("\\question " + question);
+        String finalQuestion = Node.graded ? question + " (2 marks)" : question;
+        writer.println("\\question " + finalQuestion);
         writer.println("\\vspace{1in}");
     }
 }

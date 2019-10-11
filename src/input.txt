@@ -1,9 +1,9 @@
-create exam
-title: Sample Math Exam
-subject: math
-grade 3
-get 5 MC questions
+create
+title: "Sample Math Exam"
+subject: science
+graded: T
+get 10 MC questions
 get 5 SA questions
-get 5 LA questions
-custom: "What is 2*(3+3)?"
+get 2 LA questions
+custom: "What is 2*(3+3)?" 4 marks
 done

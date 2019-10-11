@@ -54,7 +54,7 @@ public class Tokenizer {
         tokenizedProgram = tokenizedProgram.replace("\n","");
 
         // only replace numbers outside of quotation marks
-        tokenizedProgram = tokenizedProgram.replaceAll("([0-9](?=(\"[^\"]*\"|[^\"])*$))","_$1_");
+        tokenizedProgram = tokenizedProgram.replaceAll("([0-9]+(?=(\"[^\"]*\"|[^\"])*$))","_$1_");
         System.out.println(program);
 
         for (String s : literals){

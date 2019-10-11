@@ -10,19 +10,23 @@ public class Exam extends Node {
 
     @Override
     public void parse() {
-        tokenizer.getAndCheckNext("exam");
+
         title = new Title();
         title.parse();
+
         while(!tokenizer.checkToken("done")) {
             if (tokenizer.checkToken("get")){
                 tokenizer.getAndCheckNext("get");
                 int numOfQuestions = Integer.parseInt(tokenizer.getNext());
                 String typeOfQuestion = tokenizer.getNext();
-                tokenizer.getAndCheckNext("questions");
                 parseHelper(numOfQuestions, typeOfQuestion);
-            } else if (tokenizer.checkToken("grade")) {
-                tokenizer.getAndCheckNext("grade");
-                Node.grade = Integer.parseInt(tokenizer.getNext());
+                tokenizer.getAndCheckNext("questions");
+            } else if (tokenizer.checkToken("graded:")) {
+                tokenizer.getAndCheckNext("graded:");
+                String gradedValue = tokenizer.getNext();
+                if (gradedValue.equals("T")) {
+                    Node.graded = true;
+                }
             } else if(tokenizer.checkToken("subject:")) {
                 tokenizer.getAndCheckNext("subject:");
                 Node.subject = tokenizer.getNext();
@@ -30,7 +34,6 @@ public class Exam extends Node {
                 tokenizer.getAndCheckNext("custom:");
                 parseHelper(1, "FF");
             }
-            //TODO: What about FFQuestionHandling?
         }
     }
 

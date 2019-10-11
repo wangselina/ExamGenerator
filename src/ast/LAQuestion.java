@@ -12,18 +12,23 @@ public class LAQuestion extends Question {
     @Override
     void parse() {
         HashMap<String, HashMap<String, List<JSONObject>>> data = dataRetriever.getData();
-        // TODO: ADD grade
+
         List<JSONObject> LAQuestions = data.get(Node.subject).get("LA");
 
         int randomIndex = (int) (Math.random() * LAQuestions.size());
         JSONObject questionObject = LAQuestions.get(randomIndex);
 
         this.question = (String) questionObject.get("question");
+
+        if (Node.graded) {
+            Node.grade = Node.grade + 4;
+        }
     }
 
     @Override
     void evaluate() {
-        writer.println("\\question " + question);
+        String finalQuestion = Node.graded ? question + " (2 marks)" : question;
+        writer.println("\\question " + finalQuestion);
         writer.println("\\vspace{3in}");
     }
 }
