@@ -15,8 +15,8 @@ public class FFQuestion extends Question {
 
     @Override
     void evaluate() {
-        String finalQuestion = Node.graded ? question + " ("+ marks + " marks)" : question;
-        writer.println("\\question " + finalQuestion);
+        String questionCommand = Node.graded ? "\\question[" + marks + "] " : "\\question ";
+        writer.println(questionCommand + question);
         writer.println("\\vspace{1em}");
     }
 }

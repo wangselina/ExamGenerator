@@ -20,15 +20,12 @@ public class LAQuestion extends Question {
 
         this.question = (String) questionObject.get("question");
 
-        if (Node.graded) {
-            Node.grade = Node.grade + 4;
-        }
     }
 
     @Override
     void evaluate() {
-        String finalQuestion = Node.graded ? question + " (2 marks)" : question;
-        writer.println("\\question " + finalQuestion);
+        String questionCommand = Node.graded ? "\\question[4] " : "\\question ";
+        writer.println(questionCommand + question);
         writer.println("\\vspace{3in}");
     }
 }

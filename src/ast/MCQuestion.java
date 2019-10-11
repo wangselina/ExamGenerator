@@ -26,10 +26,6 @@ public class MCQuestion extends Question {
 
         JSONArray arrayOfOptions = (JSONArray) questionObject.get("options");
         parseOptions(arrayOfOptions);
-
-        if (Node.graded) {
-            Node.grade = Node.grade + 1;
-        }
     }
 
     private void parseOptions(JSONArray list) {
@@ -42,8 +38,8 @@ public class MCQuestion extends Question {
 
     @Override
     void evaluate() {
-        String finalQuestion = Node.graded ? question + " (1 marks)" : question;
-        writer.println("\\question " + finalQuestion);
+        String questionCommand = Node.graded ? "\\question[1] " : "\\question ";
+        writer.println(questionCommand + question);
         writer.println("\\begin{enumerate}");
         for (String option: options) {
             writer.println("\\item " + option);

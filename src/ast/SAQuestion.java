@@ -19,16 +19,12 @@ public class SAQuestion extends Question {
 
         question = (String) questionObject.get("question");
 
-        if (Node.graded) {
-            Node.grade = Node.grade + 2;
-        }
-
     }
 
     @Override
     public void evaluate() {
-        String finalQuestion = Node.graded ? question + " (2 marks)" : question;
-        writer.println("\\question " + finalQuestion);
+        String questionCommand = Node.graded ? "\\question[2] " : "\\question ";
+        writer.println(questionCommand + question);
         writer.println("\\vspace{1in}");
     }
 }

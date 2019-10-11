@@ -62,6 +62,13 @@ public class Exam extends Node {
         title.evaluate();
         writer.println("\\begin{document}");
         writer.println("\\maketitle");
+        if (Node.graded){
+            writer.println("\\begin{center}");
+            writer.println("\\addpoints");
+            writer.println("\\gradetable");
+            writer.println("\\end{center}");
+            writer.println("\\pagebreak");
+        }
         writer.println("\\begin{questions}");
         for (Question q : questions) {
             q.evaluate();
