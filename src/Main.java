@@ -15,9 +15,13 @@ public class Main {
         Tokenizer.makeTokenizer("src/input.txt", literals);
         DataRetriever.makeDataRetriever();
         Program document = new Program();
-        document.parse();
-        document.setWriter("output.tex");
-        document.evaluate();
-        Node.closeWriter();
+        try {
+            document.parse();
+            document.setWriter("output.tex");
+            document.evaluate();
+            Node.closeWriter();
+        } catch (RuntimeException e) {
+            System.out.println("Exam generator closing...");
+        }
     }
 }

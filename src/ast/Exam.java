@@ -1,5 +1,9 @@
 package ast;
 
+import lib.QuestionsNotFoundException;
+import lib.SubjectNotFoundException;
+import lib.TitleNotFoundException;
+
 import java.util.ArrayList;
 import java.util.List;
 
@@ -10,12 +14,19 @@ public class Exam extends Node {
 
     @Override
     public void parse() {
-
-        title = new Title();
-        title.parse();
+        if(tokenizer.checkToken("title:")) {
+            title = new Title();
+            title.parse();
+        } else {
+            throw new TitleNotFoundException();
+        }
 
         while(!tokenizer.checkToken("done")) {
             if (tokenizer.checkToken("get")){
+                // ensure subject exists
+                if(Node.subject == null) {
+                    throw new SubjectNotFoundException();
+                }
                 tokenizer.getAndCheckNext("get");
                 int numOfQuestions = Integer.parseInt(tokenizer.getNext());
                 String typeOfQuestion = tokenizer.getNext();
@@ -34,6 +45,9 @@ public class Exam extends Node {
                 tokenizer.getAndCheckNext("custom:");
                 parseHelper(1, "FF");
             }
+        }
+        if(questions.isEmpty()) {
+            throw new QuestionsNotFoundException();
         }
     }
 
